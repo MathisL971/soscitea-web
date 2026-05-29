@@ -16,7 +16,7 @@ class UdemActivitesAdapter(BaseAdapter):
     name = "udem_activites"
 
     def scrape(self, client: httpx.Client, source: Source) -> list[Event]:
-        html = fetch_text(client, source.url)
+        html = fetch_text(client, source.url, browser_fallback=True)
         soup = BeautifulSoup(html, "lxml")
         now = datetime.now(timezone.utc)
         events: list[Event] = []

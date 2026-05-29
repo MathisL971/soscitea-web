@@ -40,13 +40,21 @@ class UqamCalendarAdapter(BaseAdapter):
         api_url: str,
     ) -> list[Event]:
         params = {"organizations": org_id, "limit": 100}
-        try:
-            response = client.get(api_url, params=params)
-            if response.status_code == 404:
+        for attempt in range(2):
+            try:
+                response = client.get(api_url, params=params, timeout=90.0)
+                if response.status_code == 404:
+                    return []
+                response.raise_for_status()
+                data = response.json()
+                break
+            except httpx.TimeoutException:
+                if attempt == 0:
+                    continue
                 return []
-            response.raise_for_status()
-            data = response.json()
-        except (httpx.HTTPError, json.JSONDecodeError):
+            except (httpx.HTTPError, json.JSONDecodeError):
+                return []
+        else:
             return []
 
         items = data if isinstance(data, list) else data.get("results") or data.get("data") or []
@@ -86,7 +94,7 @@ class UqamCalendarAdapter(BaseAdapter):
     def _scrape_html(self, client: httpx.Client, source: Source) -> list[Event]:
         from bs4 import BeautifulSoup
 
-        html = fetch_text(client, source.url)
+        html = fetch_text(client, source.url, browser_fallback=True)
         soup = BeautifulSoup(html, "lxml")
         now = datetime.now(timezone.utc)
         events: list[Event] = []

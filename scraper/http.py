@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 import ssl
 
 import httpx
@@ -43,5 +44,13 @@ def fetch_text(client: httpx.Client, url: str, *, browser_fallback: bool = False
         if browser_fallback and exc.response.status_code in {403, 429, 503}:
             from scraper.browser import fetch_html
 
+            return fetch_html(url)
+        raise
+    except (httpx.ConnectError, httpx.TimeoutException, httpx.ReadTimeout) as exc:
+        if browser_fallback:
+            from scraper.browser import fetch_html
+
+            logger = logging.getLogger(__name__)
+            logger.warning("HTTP fetch failed for %s (%s); using browser fallback", url, exc)
             return fetch_html(url)
         raise
