@@ -28,9 +28,21 @@ def fetch_html(url: str, *, wait_ms: int = 2000) -> str:
         locale="fr-CA",
     )
     try:
-        page.goto(url, wait_until="domcontentloaded", timeout=90000)
-        page.wait_for_timeout(wait_ms)
-        return page.content()
+        last_error: Exception | None = None
+        for attempt in range(2):
+            try:
+                page.goto(url, wait_until="domcontentloaded", timeout=90000)
+                page.wait_for_timeout(wait_ms)
+                return page.content()
+            except Exception as exc:
+                last_error = exc
+                if attempt == 0:
+                    page.wait_for_timeout(1000)
+                    continue
+                raise
+        if last_error:
+            raise last_error
+        raise RuntimeError(f"Failed to fetch {url}")
     finally:
         page.close()
 

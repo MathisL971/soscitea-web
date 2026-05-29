@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import ssl
+
 import httpx
 import certifi
 
@@ -7,7 +9,7 @@ try:
     import truststore
 
     truststore.inject_into_ssl()
-    _SSL_VERIFY: bool | str = True
+    _SSL_VERIFY: bool | str | ssl.SSLContext = truststore.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
 except ImportError:
     _SSL_VERIFY = certifi.where()
 
