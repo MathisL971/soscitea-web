@@ -28,7 +28,7 @@ def fetch_html(url: str, *, wait_ms: int = 2000) -> str:
         locale="fr-CA",
     )
     try:
-        page.goto(url, wait_until="networkidle", timeout=60000)
+        page.goto(url, wait_until="domcontentloaded", timeout=90000)
         page.wait_for_timeout(wait_ms)
         return page.content()
     finally:

@@ -7,14 +7,15 @@ try:
     import truststore
 
     truststore.inject_into_ssl()
+    _SSL_VERIFY: bool | str = True
 except ImportError:
-    pass
+    _SSL_VERIFY = certifi.where()
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 )
-DEFAULT_TIMEOUT = 45.0
+DEFAULT_TIMEOUT = 60.0
 
 
 def create_client() -> httpx.Client:
@@ -27,7 +28,7 @@ def create_client() -> httpx.Client:
         },
         timeout=DEFAULT_TIMEOUT,
         follow_redirects=True,
-        verify=certifi.where(),
+        verify=_SSL_VERIFY,
     )
 
 
