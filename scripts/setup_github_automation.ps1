@@ -38,7 +38,6 @@ if ($ActiveUser -ne $ExpectedUser) {
   Write-Host "GitHub CLI is logged in as '$ActiveUser', not '$ExpectedUser'." -ForegroundColor Yellow
   Write-Host "Run this first, then re-run this script:" -ForegroundColor Yellow
   Write-Host "  gh auth login" -ForegroundColor Cyan
-  Write-Host "  (choose GitHub.com, HTTPS, and sign in as $ExpectedUser)" -ForegroundColor Cyan
   Write-Host ""
   exit 1
 }
@@ -60,9 +59,18 @@ Initialize Soscitea scraper and web app with daily Surge deploy workflow.
 Adds Montreal social-science events bulletin, nightly scrape pipeline, and GitHub Actions automation.
 '@
 
-  if ((Invoke-GitCommand @("commit", "-m", $commitMessage)) -ne 0) {
-    throw "git commit failed"
+  $messageFile = Join-Path $env:TEMP "soscitea-commit-msg.txt"
+  Set-Content -Path $messageFile -Value $commitMessage -Encoding utf8NoBOM
+
+  try {
+    if ((Invoke-GitCommand @("commit", "-F", $messageFile)) -ne 0) {
+      throw "git commit failed"
+    }
+  } finally {
+    Remove-Item $messageFile -ErrorAction SilentlyContinue
   }
+} else {
+  Write-Host "==> Repository already has commits"
 }
 
 $RemoteUrl = "https://github.com/$Repo.git"
@@ -90,9 +98,17 @@ $RepoExists = ($LASTEXITCODE -eq 0)
 $ErrorActionPreference = $previousPreference
 
 if (-not $RepoExists) {
-  & $Gh repo create $Repo --public --description "Montreal social-science events bulletin" --source . --remote origin --push
+  Write-Host "==> Creating GitHub repository and pushing..."
+  if ($HasOrigin) {
+    & $Gh repo create $Repo --public --description "Montreal social-science events bulletin" --push --source .
+  } else {
+    & $Gh repo create $Repo --public --description "Montreal social-science events bulletin" --source . --remote origin --push
+  }
   if ($LASTEXITCODE -ne 0) {
-    throw "gh repo create failed"
+    Write-Host "==> gh repo create reported an issue; trying git push..."
+    if ((Invoke-GitCommand @("push", "-u", "origin", "main")) -ne 0) {
+      throw "git push failed"
+    }
   }
 } else {
   Write-Host "==> Pushing to $Repo"
