@@ -1,0 +1,951 @@
+[
+  {
+    "url": "https://linktr.ee/pssamcgill",
+    "name": "PSSA McGill",
+    "discipline": "polisci",
+    "adapter": "linktree",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://docs.google.com/document/d/1s4-KJamzKa6HSF3aNP3talvI-b1eAVIt1o_SdFis_tc/edit?tab=t.0",
+    "name": "Curated events doc",
+    "discipline": "general",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Google Doc — manual or Docs API later"
+  },
+  {
+    "url": "https://linktr.ee/pssa.concordia",
+    "name": "PSSA Concordia",
+    "discipline": "polisci",
+    "adapter": "linktree",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://psgsaconcordia.wixsite.com/psgsa/events",
+    "name": "PSGSA Concordia",
+    "discipline": "polisci",
+    "adapter": "wix",
+    "priority": 1
+  },
+  {
+    "url": "https://www.instagram.com/communication_politique/",
+    "name": "Communication politique",
+    "discipline": "polisci",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Instagram — defer"
+  },
+  {
+    "url": "https://www.instagram.com/sciencepo.cs.udem/",
+    "name": "Science po UdeM",
+    "discipline": "polisci",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://www.aeepum.com/",
+    "name": "AEEPUM",
+    "discipline": "polisci",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://www.instagram.com/aespeium/",
+    "name": "AESPEIUM",
+    "discipline": "polisci",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://afesped.org/",
+    "name": "AFESPED",
+    "discipline": "polisci",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://pol.umontreal.ca/departement/activites/",
+    "name": "UdeM Political Science",
+    "discipline": "polisci",
+    "adapter": "udem_activites",
+    "priority": 1
+  },
+  {
+    "url": "https://www.concordia.ca/artsci/polisci/events.html",
+    "name": "Concordia Political Science",
+    "discipline": "polisci",
+    "adapter": "concordia_department",
+    "priority": 1
+  },
+  {
+    "url": "https://www.mcgill.ca/politicalscience/events",
+    "name": "McGill Political Science",
+    "discipline": "polisci",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://evenements.uqam.ca/evenements?organizations=167",
+    "name": "UQAM CEPP",
+    "discipline": "polisci",
+    "adapter": "uqam_calendar",
+    "priority": 1,
+    "org_id": 167
+  },
+  {
+    "url": "https://philo.uqam.ca/conferences/conferences-departementales/",
+    "name": "UQAM Philosophy dept conferences",
+    "discipline": "philo",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://cergo.enap.ca/fr/accueil.aspx?sortcode=1",
+    "name": "CERGO ENAP",
+    "discipline": "polisci",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://www.amis.monde-diplomatique.fr/-Canada-.html",
+    "name": "Amis Monde Diplomatique Canada",
+    "discipline": "polisci",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://sqsp.uqam.ca/",
+    "name": "SQSP",
+    "discipline": "polisci",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://thecic.org/events/",
+    "name": "Canadian International Council",
+    "discipline": "polisci",
+    "adapter": "cic",
+    "priority": 2,
+    "notes": "National chapter calendar — Montreal events only when listed"
+  },
+  {
+    "url": "https://cridaq.uqam.ca/activite/",
+    "name": "CRIDAQ",
+    "discipline": "polisci",
+    "adapter": "cridaq",
+    "priority": 1
+  },
+  {
+    "url": "https://linktr.ee/mcgillpsa",
+    "name": "McGill PSA",
+    "discipline": "polisci",
+    "adapter": "linktree",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://www.instagram.com/aespep/",
+    "name": "AESPEP",
+    "discipline": "philo",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://www.instagram.com/adepum_philosophie/",
+    "name": "ADEPUM",
+    "discipline": "philo",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://www.concordia.ca/artsci/philosophy/news/events.html",
+    "name": "Concordia Philosophy",
+    "discipline": "philo",
+    "adapter": "concordia_department",
+    "priority": 1
+  },
+  {
+    "url": "https://www.mcgill.ca/philosophy/events",
+    "name": "McGill Philosophy",
+    "discipline": "philo",
+    "adapter": "mcgill_events",
+    "priority": 1
+  },
+  {
+    "url": "https://www.philo-uqam-cegep.com/liste/",
+    "name": "Philo UQAM CEGEP",
+    "discipline": "philo",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://philo.uqam.ca/conferences/conferences-hugues-leblanc/",
+    "name": "Conférences Hugues-Leblanc",
+    "discipline": "philo",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://nouvelleacropole.ca/?lang=fr",
+    "name": "Nouvelle Acropole",
+    "discipline": "philo",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://montrealphilscinet.wordpress.com/activites-activities/",
+    "name": "Montréal Phil Sci Network",
+    "discipline": "philo",
+    "adapter": "wordpress_archive",
+    "priority": 2
+  },
+  {
+    "url": "https://www.mcgill.ca/economics/events",
+    "name": "McGill Economics",
+    "discipline": "econ",
+    "adapter": "mcgill_events",
+    "priority": 1
+  },
+  {
+    "url": "https://www.concordia.ca/artsci/economics/about/news.html",
+    "name": "Concordia Economics news",
+    "discipline": "econ",
+    "adapter": "concordia_department",
+    "priority": 1
+  },
+  {
+    "url": "https://evenements.esg.uqam.ca/evenements?organizations=187",
+    "name": "UQAM ESG Economics",
+    "discipline": "econ",
+    "adapter": "uqam_calendar",
+    "priority": 1,
+    "org_id": 187
+  },
+  {
+    "url": "https://sceco.umontreal.ca/notre-departement/nouvelles-et-evenements/",
+    "name": "UdeM Economics",
+    "discipline": "econ",
+    "adapter": "udem_activites",
+    "priority": 1
+  },
+  {
+    "url": "https://www.hec.ca/evenements/index.html",
+    "name": "HEC Montréal events",
+    "discipline": "econ",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://www.mcgill.ca/isid/events",
+    "name": "McGill ISID",
+    "discipline": "econ",
+    "adapter": "mcgill_events",
+    "priority": 1
+  },
+  {
+    "url": "https://linktr.ee/esamcgill",
+    "name": "ESA McGill",
+    "discipline": "econ",
+    "adapter": "linktree",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://www.facebook.com/groups/theegsa",
+    "name": "EGSA Facebook",
+    "discipline": "econ",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://linktr.ee/udemeconomie",
+    "name": "UdeM Économie",
+    "discipline": "econ",
+    "adapter": "linktree",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://linktr.ee/expandingecon.mtl",
+    "name": "Expanding Econ MTL",
+    "discipline": "econ",
+    "adapter": "linktree",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://www.instagram.com/econ_concordia/",
+    "name": "Econ Concordia",
+    "discipline": "econ",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://sase.org/",
+    "name": "SASE",
+    "discipline": "econ",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://www.economics.ca/",
+    "name": "Canadian Economics Association",
+    "discipline": "econ",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://forum-americas.org/all-events",
+    "name": "Forum Americas",
+    "discipline": "econ",
+    "adapter": "forum_americas",
+    "priority": 1
+  },
+  {
+    "url": "https://linktr.ee/sasuconcordia",
+    "name": "SASU Concordia",
+    "discipline": "socio",
+    "adapter": "linktree",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://linktr.ee/reesum",
+    "name": "REESUM",
+    "discipline": "socio",
+    "adapter": "linktree",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://linktr.ee/mcgillanthropology",
+    "name": "McGill Anthropology",
+    "discipline": "socio",
+    "adapter": "linktree",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://linktr.ee/mcgillssa",
+    "name": "McGill SSA",
+    "discipline": "socio",
+    "adapter": "linktree",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://linktr.ee/aeaum_et_ses_anthropotes",
+    "name": "AEAUM",
+    "discipline": "socio",
+    "adapter": "linktree",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://www.instagram.com/aecsaum/",
+    "name": "AECSAUM",
+    "discipline": "socio",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://www.facebook.com/groups/acssum/",
+    "name": "ACSSUM Facebook",
+    "discipline": "socio",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://www.concordia.ca/artsci/sociology-anthropology/events.html",
+    "name": "Concordia Socio-Anthro",
+    "discipline": "socio",
+    "adapter": "concordia_department",
+    "priority": 1
+  },
+  {
+    "url": "https://www.mcgill.ca/sociology/events",
+    "name": "McGill Sociology",
+    "discipline": "socio",
+    "adapter": "mcgill_events",
+    "priority": 1
+  },
+  {
+    "url": "https://www.mcgill.ca/sociology/seminars",
+    "name": "McGill Sociology seminars",
+    "discipline": "socio",
+    "adapter": "mcgill_seminars",
+    "priority": 1
+  },
+  {
+    "url": "https://www.mcgill.ca/beatty/",
+    "name": "McGill Beatty lectures",
+    "discipline": "socio",
+    "adapter": "mcgill_events",
+    "priority": 2
+  },
+  {
+    "url": "https://www.mcgill.ca/misc/events",
+    "name": "McGill MISC",
+    "discipline": "socio",
+    "adapter": "mcgill_events",
+    "priority": 1
+  },
+  {
+    "url": "https://www.mcgill.ca/anthropology/events",
+    "name": "McGill Anthropology",
+    "discipline": "socio",
+    "adapter": "mcgill_events",
+    "priority": 1
+  },
+  {
+    "url": "https://socio.umontreal.ca/departement/nouvelles-evenements/",
+    "name": "UdeM Sociology",
+    "discipline": "socio",
+    "adapter": "udem_activites",
+    "priority": 1
+  },
+  {
+    "url": "https://anthropo.umontreal.ca/departement/nouvelles/",
+    "name": "UdeM Anthropology",
+    "discipline": "socio",
+    "adapter": "udem_activites",
+    "priority": 1
+  },
+  {
+    "url": "https://evenements.uqam.ca/evenements?organizations=199",
+    "name": "UQAM Socio-Anthro",
+    "discipline": "socio",
+    "adapter": "uqam_calendar",
+    "priority": 1,
+    "org_id": 199
+  },
+  {
+    "url": "https://www.concordia.ca/artsci/cissc/lectures-conferences.html",
+    "name": "Concordia CISSC",
+    "discipline": "socio",
+    "adapter": "concordia_department",
+    "priority": 1
+  },
+  {
+    "url": "https://cas-sca.ca/en/",
+    "name": "CAS-SCA Anthropology",
+    "discipline": "socio",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://www.csa-scs.ca/",
+    "name": "Canadian Sociological Association",
+    "discipline": "socio",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://cupaconcordia.com/",
+    "name": "CUPA Concordia",
+    "discipline": "socio",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://linktr.ee/mcgillmpsa",
+    "name": "McGill MPSA",
+    "discipline": "psych",
+    "adapter": "linktree",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://theagsp.wordpress.com/",
+    "name": "AGSP",
+    "discipline": "psych",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://www.facebook.com/aecspum",
+    "name": "AECSPUM Facebook",
+    "discipline": "psych",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://amnesique.com/ageepum/",
+    "name": "AGEEPUM",
+    "discipline": "psych",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://linktr.ee/aepsumofficiel",
+    "name": "AEPSUM",
+    "discipline": "psych",
+    "adapter": "linktree",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://www.mcgill.ca/psychology/events-colloquia",
+    "name": "McGill Psychology",
+    "discipline": "psych",
+    "adapter": "mcgill_events",
+    "priority": 1
+  },
+  {
+    "url": "https://www.concordia.ca/events.html",
+    "name": "Concordia all events",
+    "discipline": "general",
+    "adapter": "concordia_events",
+    "priority": 2
+  },
+  {
+    "url": "https://www.concordia.ca/artsci/psychology/news/colloquium-series.html",
+    "name": "Concordia Psychology colloquia",
+    "discipline": "psych",
+    "adapter": "concordia_department",
+    "priority": 1
+  },
+  {
+    "url": "https://psychologie.uqam.ca/conferences-et-colloques/",
+    "name": "UQAM Psychology",
+    "discipline": "psych",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://isc.uqam.ca/",
+    "name": "ISC UQAM",
+    "discipline": "psych",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://evenements.uqam.ca/evenements?organizations=193",
+    "name": "UQAM Psychology",
+    "discipline": "psych",
+    "adapter": "uqam_calendar",
+    "priority": 1,
+    "org_id": 193
+  },
+  {
+    "url": "https://psy.umontreal.ca/notre-departement/evenements/",
+    "name": "UdeM Psychology",
+    "discipline": "psych",
+    "adapter": "udem_activites",
+    "priority": 1
+  },
+  {
+    "url": "https://www.iarfconference.com/conf/index.php?id=2929184",
+    "name": "IARF Conference",
+    "discipline": "psych",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://linktr.ee/aehum",
+    "name": "AEHUM",
+    "discipline": "history",
+    "adapter": "linktree",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://linktr.ee/hsamcgill",
+    "name": "HSA McGill",
+    "discipline": "history",
+    "adapter": "linktree",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://www.instagram.com/histoire_aeddhum/",
+    "name": "Histoire AEDDHUM",
+    "discipline": "history",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://www.mcgill.ca/history/events",
+    "name": "McGill History",
+    "discipline": "history",
+    "adapter": "mcgill_events",
+    "priority": 1
+  },
+  {
+    "url": "https://www.concordia.ca/artsci/events.html",
+    "name": "Concordia Arts & Science events",
+    "discipline": "history",
+    "adapter": "concordia_department",
+    "priority": 1
+  },
+  {
+    "url": "https://histoire.umontreal.ca/departement/activites/",
+    "name": "UdeM History",
+    "discipline": "history",
+    "adapter": "udem_activites",
+    "priority": 1
+  },
+  {
+    "url": "https://evenements.uqam.ca/evenements?organizations=190",
+    "name": "UQAM History",
+    "discipline": "history",
+    "adapter": "uqam_calendar",
+    "priority": 1,
+    "org_id": 190
+  },
+  {
+    "url": "https://www.mcgill.ca/religiousstudies/events-0",
+    "name": "McGill Religious Studies",
+    "discipline": "history",
+    "adapter": "mcgill_events",
+    "priority": 1
+  },
+  {
+    "url": "https://evenements.uqam.ca/evenements?organizations=197",
+    "name": "UQAM Religious Studies",
+    "discipline": "history",
+    "adapter": "uqam_calendar",
+    "priority": 1,
+    "org_id": 197
+  },
+  {
+    "url": "https://etudes-religieuses.umontreal.ca/notre-institut/evenements/",
+    "name": "UdeM Religious Studies",
+    "discipline": "history",
+    "adapter": "udem_activites",
+    "priority": 1
+  },
+  {
+    "url": "https://www.facebook.com/groups/261777667566550/",
+    "name": "History Facebook group",
+    "discipline": "history",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://www.ted.com/",
+    "name": "TED",
+    "discipline": "general",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Global, not Montreal-specific"
+  },
+  {
+    "url": "https://www.federationhss.ca/en",
+    "name": "Federation HSS",
+    "discipline": "general",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://www.vaniercollege.qc.ca/events/social-science-festival",
+    "name": "Vanier Social Science Festival",
+    "discipline": "general",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://tedxmcgill.org/",
+    "name": "TEDx McGill",
+    "discipline": "general",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://westlibcat.org/iguana/www.main.cls?surl=home/",
+    "name": "Westmount Library",
+    "discipline": "general",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://www.upopmontreal.com/",
+    "name": "UPOP Montréal",
+    "discipline": "general",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://afesh-uqam.ca/",
+    "name": "AFESH UQAM",
+    "discipline": "general",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://www.concordia.ca/about/community/streets-cafe.html",
+    "name": "Streets Café",
+    "discipline": "general",
+    "adapter": "concordia_department",
+    "priority": 1
+  },
+  {
+    "url": "https://www.concordia.ca/artsci/research/social-justice-centre/calendar.html",
+    "name": "Social Justice Centre",
+    "discipline": "general",
+    "adapter": "concordia_department",
+    "priority": 1
+  },
+  {
+    "url": "https://www.eventbrite.ca/o/concordia-jurist-in-residence-conference-series-70189842503",
+    "name": "Concordia Jurist-in-Residence",
+    "discipline": "general",
+    "adapter": "eventbrite",
+    "priority": 2
+  },
+  {
+    "url": "https://linktr.ee/polysphere?ltsid=94090b5a-3faa-4b49-ab00-5271ecd7dae3",
+    "name": "Polysphere",
+    "discipline": "general",
+    "adapter": "linktree",
+    "priority": 3,
+    "notes": "Deferred — low yield or duplicate"
+  },
+  {
+    "url": "https://www.acfas.ca/acfas/qui-sommes-nous",
+    "name": "ACFAS",
+    "discipline": "general",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://www.eventbrite.ca/o/sip-read-book-eventsevenements-litteraires-75566900263",
+    "name": "SIP Read Book Events",
+    "discipline": "general",
+    "adapter": "eventbrite",
+    "priority": 2
+  },
+  {
+    "url": "https://bistrobrain.ca/",
+    "name": "BistroBrain",
+    "discipline": "general",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "No parser — deferred until adapter exists"
+  },
+  {
+    "url": "https://framagenda.org/remote.php/dav/public-calendars/zQHSGsKNDxPwAFr6?export",
+    "name": "CIRST (iCal)",
+    "discipline": "general",
+    "adapter": "skip",
+    "priority": 3,
+    "notes": "Framagenda feed — may lag behind website"
+  },
+  {
+    "url": "https://cirst.uqam.ca/conferences-et-tables-rondes/",
+    "name": "CIRST — Conférences",
+    "discipline": "general",
+    "adapter": "cirst",
+    "priority": 1
+  },
+  {
+    "url": "https://cirst.uqam.ca/colloques-et-congres/",
+    "name": "CIRST — Colloques",
+    "discipline": "general",
+    "adapter": "cirst",
+    "priority": 1
+  },
+  {
+    "url": "https://cirst.uqam.ca/ateliers-et-formations/",
+    "name": "CIRST — Ateliers",
+    "discipline": "general",
+    "adapter": "cirst",
+    "priority": 1
+  },
+  {
+    "url": "https://www.lecre.umontreal.ca/calendrier/",
+    "name": "CRÉ",
+    "discipline": "philo",
+    "adapter": "cre",
+    "priority": 1
+  },
+  {
+    "url": "https://crises.uqam.ca/activites/evenements-a-venir/",
+    "name": "CRISES UQAM",
+    "discipline": "socio",
+    "adapter": "wordpress_headings",
+    "priority": 1
+  },
+  {
+    "url": "https://www.ceim.uqam.ca/db/spip.php?rubrique27=",
+    "name": "CEIM UQAM",
+    "discipline": "polisci",
+    "adapter": "wordpress_headings",
+    "priority": 1
+  },
+  {
+    "url": "https://celat.ca/uqam/activites-uqam/",
+    "name": "CELAT UQAM",
+    "discipline": "socio",
+    "adapter": "wordpress_headings",
+    "priority": 1
+  },
+  {
+    "url": "https://evenements.uqam.ca/evenements",
+    "name": "UQAM all events",
+    "discipline": "general",
+    "adapter": "uqam_calendar",
+    "priority": 2
+  },
+  {
+    "url": "https://www.mcgill.ca/arts/events/calendar",
+    "name": "McGill Faculty of Arts",
+    "discipline": "general",
+    "adapter": "mcgill_events",
+    "priority": 2
+  },
+  {
+    "url": "https://www.mcgill.ca/peace-security/speaker-series",
+    "name": "McGill CIPSS",
+    "discipline": "polisci",
+    "adapter": "mcgill_events",
+    "priority": 1
+  },
+  {
+    "url": "https://www.mcgill.ca/lin-centre",
+    "name": "McGill Lin Centre",
+    "discipline": "polisci",
+    "adapter": "mcgill_events",
+    "priority": 1
+  },
+  {
+    "url": "https://www.mcgill.ca/centre-montreal/events",
+    "name": "McGill CIRM",
+    "discipline": "socio",
+    "adapter": "mcgill_events",
+    "priority": 1
+  },
+  {
+    "url": "https://www.mcgill.ca/equity-ethics-policy/events-0",
+    "name": "McGill DEEP",
+    "discipline": "general",
+    "adapter": "mcgill_events",
+    "priority": 1
+  },
+  {
+    "url": "https://www.concordia.ca/artsci/research/irms/",
+    "name": "Concordia IRMS",
+    "discipline": "socio",
+    "adapter": "concordia_department",
+    "priority": 1
+  },
+  {
+    "url": "https://bellesheures.umontreal.ca/themes-activites/societe/",
+    "name": "Les Belles Heures — Société",
+    "discipline": "general",
+    "adapter": "belles_heures",
+    "priority": 1
+  },
+  {
+    "url": "https://enap.ca/evenements",
+    "name": "ENAP events",
+    "discipline": "polisci",
+    "adapter": "enap",
+    "priority": 1
+  },
+  {
+    "url": "https://cirano.qc.ca/index.php/fr/list/evenements",
+    "name": "CIRANO",
+    "discipline": "econ",
+    "adapter": "cirano",
+    "priority": 1
+  },
+  {
+    "url": "https://cireqmontreal.com/en/",
+    "name": "CIREQ",
+    "discipline": "econ",
+    "adapter": "cireq",
+    "priority": 1
+  },
+  {
+    "url": "https://grippmontreal.org/fr/",
+    "name": "GRIPP",
+    "discipline": "philo",
+    "adapter": "gripp",
+    "priority": 1
+  },
+  {
+    "url": "https://calendrier.umontreal.ca/",
+    "name": "UdeM institutional calendar",
+    "discipline": "general",
+    "adapter": "udem_calendrier",
+    "priority": 2
+  },
+  {
+    "url": "https://policyoptions.irpp.org/events/",
+    "name": "IRPP events",
+    "discipline": "polisci",
+    "adapter": "irpp_events",
+    "priority": 1
+  },
+  {
+    "url": "https://sqsp.uqam.ca/congres/",
+    "name": "SQSP congress",
+    "discipline": "polisci",
+    "adapter": "sqsp_congress",
+    "priority": 1
+  },
+  {
+    "url": "https://www.laconferencedemontreal.com/",
+    "name": "Conférence de Montréal",
+    "discipline": "polisci",
+    "adapter": "conference_montreal",
+    "priority": 1
+  },
+  {
+    "url": "https://www.concordia.ca/about/shift.html",
+    "name": "Concordia SHIFT",
+    "discipline": "socio",
+    "adapter": "shift",
+    "priority": 1
+  },
+  {
+    "url": "https://www.mcgill.ca/politicalscience/events/calendar",
+    "name": "McGill Political Science calendar",
+    "discipline": "polisci",
+    "adapter": "mcgill_events",
+    "priority": 1
+  }
+]

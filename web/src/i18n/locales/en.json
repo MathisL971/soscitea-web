@@ -1,0 +1,124 @@
+{
+
+  "app": {
+
+    "loading": "Loading events…",
+
+    "loadError": "Could not load the events feed."
+
+  },
+
+  "meta": {
+
+    "title": "Soscitea — Montreal Social Science Events",
+
+    "description": "Soscitea — Montreal social science events, seminars, and talks in one place."
+
+  },
+
+  "language": {
+
+    "label": "Language",
+
+    "en": "English",
+
+    "fr": "French"
+
+  },
+
+  "theme": {
+
+    "light": "Light",
+
+    "dark": "Dark",
+
+    "switchToLight": "Switch to light mode",
+
+    "switchToDark": "Switch to dark mode"
+
+  },
+
+  "hero": {
+
+    "statusAria": "Feed status",
+
+    "deck": "As technology mediates more of what we read, share, and debate, the humanities and social sciences need a clearer, more visible place in public life. Soscitea gathers lectures, colloquia, and cultural events where critical thought still happens, and makes them easy to discover."
+  },
+
+  "filters": {
+
+    "aria": "Filter events",
+
+    "title": "Events",
+
+    "resultCount_one": "{{count}} event",
+
+    "resultCount_other": "{{count}} events",
+
+    "search": "Search",
+
+    "searchPlaceholder": "Talks, seminars, departments…",
+
+    "discipline": "Discipline",
+
+    "allFields": "All fields"
+
+  },
+
+  "events": {
+
+    "empty": "No events match your filters.",
+
+    "emptyHint": "Try clearing the search or choosing a different discipline.",
+
+    "dateTbd": "Date TBD",
+
+    "dayCarousel": "Events on {{date}}",
+
+    "carouselPrev": "Previous events",
+
+    "carouselNext": "Next events"
+
+  },
+
+  "date": {
+
+    "updatedJustNow": "Updated just now",
+
+    "updatedHoursAgo": "Updated {{hours}}h ago"
+
+  },
+
+  "footer": {
+
+    "about": "About",
+
+    "text": "Soscitea aggregates Montreal social-science events from universities, research centres, and student associations — refreshed nightly from sources across the city."
+
+  },
+
+  "disciplines": {
+
+    "polisci": "Political Science",
+
+    "philo": "Philosophy",
+
+    "econ": "Economics",
+
+    "socio": "Sociology",
+
+    "anthrop": "Anthropology",
+
+    "psych": "Psychology",
+
+    "hist": "History",
+
+    "relig": "Religious Studies",
+
+    "general": "General"
+
+  }
+
+}
+
+

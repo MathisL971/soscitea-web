@@ -1,0 +1,122 @@
+/* Logo system — cup + steam mark */
+
+.logo {
+  --logo-ink: var(--tea-deep, #452618);
+  --logo-tea: var(--tea, #73402f);      /* wordmark "tea" syllable */
+  --logo-accent: var(--amber, oklch(0.68 0.085 68));
+  --logo-fill: var(--paper-card, #fffdf8);
+  --logo-size: 4.5rem;
+  color: var(--logo-ink);
+}
+
+.logo--mono {
+  --logo-tea: var(--logo-ink);
+  --logo-accent: var(--logo-ink);
+}
+
+.logo--inverse {
+  --logo-ink: var(--paper-card, #fffdf8);
+  --logo-tea: var(--tea-soft, #c9b08a);
+  --logo-accent: var(--amber-inverse, oklch(0.76 0.065 72));
+  --logo-fill: color-mix(in srgb, var(--paper-card) 8%, transparent);
+}
+
+.logo__mark {
+  width: var(--logo-size);
+  height: var(--logo-size);
+  flex-shrink: 0;
+  display: block;
+}
+
+.logo__stroke {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.logo__cup {
+  fill: var(--logo-fill);
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.logo__tea {
+  fill: none;
+  stroke: var(--logo-accent);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+
+.logo__steam {
+  fill: none;
+  stroke: var(--logo-accent);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.logo__steam--center { opacity: 0.58; }
+.logo__steam--side { opacity: 0.42; }
+
+/* Wordmark */
+
+.logo--wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  font-size: clamp(2.4rem, 7vw, 3.6rem);
+  white-space: nowrap;
+}
+
+.logo__word {
+  font-family: var(--font-display);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.logo__word--sosci {
+  font-weight: 700;
+  color: var(--logo-ink);
+}
+
+.logo__word--tea {
+  font-weight: 500;
+  font-style: italic;
+  color: var(--logo-tea);
+}
+
+/* Lockup */
+
+.logo--lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: clamp(2.4rem, 7vw, 3.6rem);
+}
+
+.logo--lockup .logo__lockup-mark {
+  --logo-size: 1.16em;
+  transform: translateY(-0.05em);
+}
+
+.logo__lockup-type {
+  display: inline-flex;
+  align-items: baseline;
+  font-size: 1em;
+  white-space: nowrap;
+  transform: translateY(0.02em);
+}
+
+@media (max-width: 640px) {
+  .logo--lockup {
+    gap: 0.4rem;
+  }
+
+  .logo__lockup-type,
+  .logo--wordmark {
+    font-size: clamp(2rem, 11vw, 2.6rem);
+  }
+}

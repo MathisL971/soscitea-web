@@ -1,0 +1,1 @@
+"""Soscitea event scraper."""

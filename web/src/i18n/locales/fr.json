@@ -1,0 +1,124 @@
+{
+
+  "app": {
+
+    "loading": "Chargement des événements…",
+
+    "loadError": "Impossible de charger le fil d'événements."
+
+  },
+
+  "meta": {
+
+    "title": "Soscitea — Événements en sciences sociales à Montréal",
+
+    "description": "Soscitea — conférences, colloques et activités en sciences sociales à Montréal, réunis au même endroit."
+
+  },
+
+  "language": {
+
+    "label": "Langue",
+
+    "en": "Anglais",
+
+    "fr": "Français"
+
+  },
+
+  "theme": {
+
+    "light": "Clair",
+
+    "dark": "Sombre",
+
+    "switchToLight": "Passer au mode clair",
+
+    "switchToDark": "Passer au mode sombre"
+
+  },
+
+  "hero": {
+
+    "statusAria": "État du fil",
+
+    "deck": "Au fur et à mesure que la technologie structure ce que nous lisons, partageons et débatons, les sciences humaines et sociales ont besoin d'une place plus visible dans la vie publique. Soscitea rassemble conférences, colloques et rencontres culturelles où la pensée critique vit encore, et les rend faciles à découvrir."
+  },
+
+  "filters": {
+
+    "aria": "Filtrer les événements",
+
+    "title": "Événements",
+
+    "resultCount_one": "{{count}} événement",
+
+    "resultCount_other": "{{count}} événements",
+
+    "search": "Recherche",
+
+    "searchPlaceholder": "Conférences, séminaires, départements…",
+
+    "discipline": "Discipline",
+
+    "allFields": "Tous les champs"
+
+  },
+
+  "events": {
+
+    "empty": "Aucun événement ne correspond à vos filtres.",
+
+    "emptyHint": "Essayez d'effacer la recherche ou de choisir une autre discipline.",
+
+    "dateTbd": "Date à confirmer",
+
+    "dayCarousel": "Événements du {{date}}",
+
+    "carouselPrev": "Événements précédents",
+
+    "carouselNext": "Événements suivants"
+
+  },
+
+  "date": {
+
+    "updatedJustNow": "Mis à jour à l'instant",
+
+    "updatedHoursAgo": "Mis à jour il y a {{hours}} h"
+
+  },
+
+  "footer": {
+
+    "about": "À propos",
+
+    "text": "Soscitea agrège les événements en sciences sociales à Montréal provenant d'universités, de centres de recherche et d'associations étudiantes — actualisés chaque nuit à partir de sources dans toute la ville."
+
+  },
+
+  "disciplines": {
+
+    "polisci": "Science politique",
+
+    "philo": "Philosophie",
+
+    "econ": "Économie",
+
+    "socio": "Sociologie",
+
+    "anthrop": "Anthropologie",
+
+    "psych": "Psychologie",
+
+    "hist": "Histoire",
+
+    "relig": "Études religieuses",
+
+    "general": "Général"
+
+  }
+
+}
+
+

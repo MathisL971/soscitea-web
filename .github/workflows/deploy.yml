@@ -1,0 +1,67 @@
+name: Daily scrape and deploy
+
+on:
+  schedule:
+    # 06:00 America/Montreal (EST) / 07:00 (EDT)
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: surge-deploy
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt -r requirements-dev.txt
+
+      - name: Install Playwright browser
+        run: python -m playwright install chromium
+
+      - name: Scrape events
+        run: python run.py --priority 1
+
+      - name: Sync events into web/public
+        run: python scripts/sync_events.py
+
+      - name: Run scraper tests
+        run: pytest tests/test_extract.py -q
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+
+      - name: Build site
+        working-directory: web
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm build
+
+      - name: Deploy to Surge
+        working-directory: web
+        run: npx surge dist ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
